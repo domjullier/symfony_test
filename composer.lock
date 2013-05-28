@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "04bf3ed03f7ec74d65b8e6aca5e08dc5",
+    "hash": "a9f4f4be0806466de690f199ad2c0909",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -206,16 +206,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "2.4.0-RC2",
+            "version": "2.4.0-RC3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "2.4.0-RC2"
+                "reference": "2.4.0-RC3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/2.4.0-RC2",
-                "reference": "2.4.0-RC2",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/2.4.0-RC3",
+                "reference": "2.4.0-RC3",
                 "shasum": ""
             },
             "require": {
@@ -263,7 +263,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -276,7 +276,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-05-09 21:35:24"
+            "time": "2013-05-27 19:11:46"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -335,16 +335,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.4.0-BETA2",
+            "version": "2.4.0-RC1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "2.4.0-BETA2"
+                "reference": "2.4.0-RC1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2.4.0-BETA2",
-                "reference": "2.4.0-BETA2",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2.4.0-RC1",
+                "reference": "2.4.0-RC1",
                 "shasum": ""
             },
             "require": {
@@ -401,7 +401,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-05-11 08:21:40"
+            "time": "2013-05-27 19:17:11"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -532,6 +532,60 @@
             "time": "2013-04-27 11:57:35"
         },
         {
+            "name": "doctrine/doctrine-migrations-bundle",
+            "version": "dev-master",
+            "target-dir": "Doctrine/Bundle/MigrationsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
+                "reference": "6891b8595a003afce8040dd794e6e9f379bbfafc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/6891b8595a003afce8040dd794e6e9f379bbfafc",
+                "reference": "6891b8595a003afce8040dd794e6e9f379bbfafc",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": ">=1.0,<2.0",
+                "doctrine/migrations": "*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.1.0,<2.4-dev"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\MigrationsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                }
+            ],
+            "description": "Symfony DoctrineMigrationsBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "dbal",
+                "migrations",
+                "schema"
+            ],
+            "time": "2013-04-27 11:57:31"
+        },
+        {
             "name": "doctrine/inflector",
             "version": "v1.0",
             "source": {
@@ -647,17 +701,71 @@
             "time": "2013-01-12 18:59:04"
         },
         {
-            "name": "doctrine/orm",
-            "version": "2.4.0-BETA2",
+            "name": "doctrine/migrations",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "2.4.0-BETA2"
+                "url": "https://github.com/doctrine/migrations.git",
+                "reference": "e1f6efcd94993b493de5c6a413cbc327ea9c0caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2.4.0-BETA2",
-                "reference": "2.4.0-BETA2",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/e1f6efcd94993b493de5c6a413cbc327ea9c0caa",
+                "reference": "e1f6efcd94993b493de5c6a413cbc327ea9c0caa",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": ">=2.0,<2.5.x-dev",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "symfony/console": "2.*",
+                "symfony/yaml": "2.*"
+            },
+            "suggest": {
+                "symfony/console": "to run the migration from the console"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\DBAL\\Migrations": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan H. Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Database Schema migrations using Doctrine DBAL",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "migrations"
+            ],
+            "time": "2012-12-27 16:39:29"
+        },
+        {
+            "name": "doctrine/orm",
+            "version": "2.4.0-RC1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/doctrine2.git",
+                "reference": "2.4.0-RC1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2.4.0-RC1",
+                "reference": "2.4.0-RC1",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +826,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-05-10 21:31:27"
+            "time": "2013-05-27 19:47:16"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1871,7 +1979,9 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "doctrine/doctrine-fixtures-bundle": 20,
-        "doctrine/data-fixtures": 20
+        "doctrine/data-fixtures": 20,
+        "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/migrations": 20
     },
     "platform": {
         "php": ">=5.3.3"
